@@ -238,11 +238,17 @@ menu:
           params:
               icon: brand-youtube
 
-        - identifier: youtube
-          name: Telegram
-          url: 
+        - identifier: RSS
+          name: RSS
+          url: https://tdyjrs.com/index.xml
           params:
-              icon: brand-telegram
+              icon: rss
+
+        # - identifier: Telegram
+        #   name: Telegram
+        #   url: 
+        #   params:
+        #       icon: brand-telegram
 
 related:
     includeNewer: true
