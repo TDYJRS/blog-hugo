@@ -15,25 +15,26 @@ hasCJKLanguage: true
 languages:
     zh-cn:
         languageName: 简体中文
-        title: TDYJRS
+        title: TDYJRS'blog
         weight: 1
         params:
             sidebar:
                 subtitle: 散步狗狗
-    en:
-        languageName: English
-        title: TDYJRS
-        weight: 2
-        params:
-            sidebar:
-                subtitle: Show me your code
-    jp:
-        languageName: 日本語
-        title: TDYJRS
-        weight: 3
-        params:
-            sidebar:
-                subtitle: みんなだいすき
+            
+    # en:
+    #     languageName: English
+    #     title: TDYJRS'blog
+    #     weight: 2
+    #     params:
+    #         sidebar:
+    #             subtitle: Show me your code
+    # jp:
+    #     languageName: 日本語
+    #     title: TDYJRS'blog
+    #     weight: 3
+    #     params:
+    #         sidebar:
+    #             subtitle: みんなだいすき
 services:
     # Change it to your Disqus shortname before using
     disqus:
