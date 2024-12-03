@@ -22,4 +22,11 @@
   color: #ffff;
   background: #557697;
 }
-  
+
+footer.site-footer {
+    .busuanzi {
+        color: var(--body-text-color);
+        font-weight: normal;
+        font-size: 1.2rem;
+    }
+}
