@@ -229,11 +229,11 @@ menu:
           params:
               icon: brand-twitter
         
-        - identifier: bilibili
-          name: Bilibili
-          url: https://space.bilibili.com/76969044
+        - identifier: memos
+          name: Memos
+          url: https://memos.tdyjrs.com
           params:
-              icon: brand-bilibili
+              icon: brand-message
 
         - identifier: youtube
           name: YouTube
