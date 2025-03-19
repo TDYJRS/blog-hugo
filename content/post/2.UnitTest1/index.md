@@ -15,7 +15,7 @@ tags:
 
 ## 引言
 
-### **背景：**
+### 背景：
 
 在安卓编码过程中，采取合理的测试环境可以有效的保证代码质量，减少逻辑漏洞，审查问题甚至推进业务代码的优化与重构。
 
@@ -23,7 +23,7 @@ tags:
 
 ## 单元测试基础
 
-### **概念：**
+### 概念：
 
 单元测试属于软件测试中的早期环节，在每单个模块的编码完成后即可进行。
 
@@ -42,11 +42,11 @@ tags:
 ![测试成本图](https://picturebed-hugo.tdyjrs.com/2024/12/测试成本图-0589e77e721b370294e7145830ddfe1f.PNG)
 
 2. 驱动代码重构与代码优化，提高代码质量
-   1.  良好的代码一定具备可测性，如果现有的代码无法写单元测试，就会形成重构驱动，使代码耦合性进一步降低以提高代码质量。
+   -  良好的代码一定具备可测性，如果现有的代码无法写单元测试，就会形成重构驱动，使代码耦合性进一步降低以提高代码质量。
 3. 一种验证方式，提高对代码的自信程度
-   1.  测试覆盖率高的代码不一定没有问题，但是行覆盖率的代码肯定存在问题。
-   2.  较高覆盖率的代码可以有效提升程序员对于自身产品质量稳定性的自信
-   3.  如果对项目代码进行了修正，而单测验证通过，可以在一定程度上说明我们的修改不会对代码产生影响
+   -  测试覆盖率高的代码不一定没有问题，但是行覆盖率的代码肯定存在问题。
+   -  较高覆盖率的代码可以有效提升程序员对于自身产品质量稳定性的自信
+   -  如果对项目代码进行了修正，而单测验证通过，可以在一定程度上说明我们的修改不会对代码产生影响
 
 ### 单元测试文件写在哪儿：
 
@@ -66,7 +66,7 @@ Androite studio：Android Studio Giraffe | 2022.3.1 Beta 1 gradle：7.2或8.4
 
 build.gradle项目依赖新增三个测试框架
 
-1. Junit
+- Junit
 
 ```Bash
 dependencies {
@@ -75,7 +75,7 @@ dependencies {
 }
 ```
 
-1. Mockito
+- Mockito
 
 ```Bash
 dependencies {
@@ -84,7 +84,7 @@ dependencies {
 }
 ```
 
-1. Robolectric
+- Robolectric
 
 ```Bash
 dependencies {
@@ -107,7 +107,7 @@ dependencies {
 
 Java原生自带的测试工具，用以测试与安卓无关的java类，也是入门时最好上手与使用的框架，本文采用的版本为junit:4.13.2
 
-#### **单测三段式：**
+#### **单测三段式**：
 
 如果不知道如何上手测试，就牢记下面三段并依次执行
 
@@ -115,24 +115,24 @@ Java原生自带的测试工具，用以测试与安卓无关的java类，也是
 
 为被测试方法提供所需的资源环境，或方法拦截模拟依赖的其他方法的结果
 
-1. 执行语句：
+2. 执行语句：
 
 执行被测试方法
 
-1. 断言结果：
+3. 断言结果：
 
 预期执行被测试方法后的结果，并与实际执行结果结合进行验证
 
 #### Junit知识点：
 
-1. @Test 注解，使得可以直接在该方法上运行测试
-2. @before与@after注解
-   1. @before：在进入每一个@Test修饰的测试方法之前都会执行
-      1. 用途：全局+每次测试新建对象，清空环境与依赖
-   2. @after：在完成每一个@Test修饰的测试方法之后都会执行
-      1. 用途：强行重启部分系统环境（如线程
-3. 断言验证语法
-   1. 验证结果是否符合预期（更多验证方法参考链接：[JUnit 断言验证](https://blog.csdn.net/m0_61160520/article/details/141322577)）
+- @Test 注解，使得可以直接在该方法上运行测试
+- @before与@after注解
+   - @before：在进入每一个@Test修饰的测试方法之前都会执行
+      - 用途：全局+每次测试新建对象，清空环境与依赖
+   - @after：在完成每一个@Test修饰的测试方法之后都会执行
+      - 用途：强行重启部分系统环境（如线程
+- 断言验证语法
+   - 验证结果是否符合预期（更多验证方法参考链接：[JUnit 断言验证](https://blog.csdn.net/m0_61160520/article/details/141322577)）
 
 ```Java
 public class SetUnitTest {
@@ -170,7 +170,7 @@ public class SetUnitTest {
 
 反射是 Java 的一种强大的机制，它允许程序在运行时检查和操作类、接口、方法和字段等程序元素，而不需要在编译时就知道这些元素的名称。 
 
-**作用：**在单元测试需要覆盖到私有变量和私有方法时，可以使用反射去访问，以单独覆盖这些方法。
+**作用**：在单元测试需要覆盖到私有变量和私有方法时，可以使用反射去访问，以单独覆盖这些方法。
 
 ##### 反射举例测试：
 
@@ -294,18 +294,18 @@ Mock 测试就是在测试过程中，创建一个假对象，避免为了测试
 
 1. 启动模拟环境（三种方式）
 
-   1. 方法一：**设置 MockitoJUnitRunner （不常用）**
+   - 方法一：**设置 MockitoJUnitRunner （不常用）**
 
-   2. ```Java
+    ```Java
       @ExtendWith(MockitoExtension.class)
       public class MockitoAnnotationUnitTest {
           ...
       }
       ```
 
-   3. 方法二：在Before中调用**MockitoAnnotations.openMocks()** **（最常用，请优先采用这种方式）**
+   - 方法二：在Before中调用**MockitoAnnotations.openMocks()** **（最常用，请优先采用这种方式）**
 
-   4. ```Java
+    ```Java
       @Before
       public void init() {
           MockitoAnnotations.initMocks(this); // 2.7版本
@@ -313,9 +313,9 @@ Mock 测试就是在测试过程中，创建一个假对象，避免为了测试
       }
       ```
 
-   5. 方法三：**使用** ***MockitoJUnit.rule()***:**（不常用）**
+   - 方法三：**使用** ***MockitoJUnit.rule()***:**（不常用）**
 
-   6. ```Java
+    ```Java
       public class MockitoAnnotationsInitWithMockitoJUnitRuleUnitTest {
       
           @Rule
@@ -327,23 +327,23 @@ Mock 测试就是在测试过程中，创建一个假对象，避免为了测试
 
 2. 模拟对象行为拦截：doreturn、donothing、when
 
-   1. 在 Mockito 中，每创建一个模拟对象，如 Mockito.mock(List.class)，这个模拟对象会为所有方法提供默认实现。默认实现并不会执行原有方法逻辑而是直接根据原有方法预期返回值类型直接返回缺省参数，如果希望方法返回指定参数，则可以采用doreturn、dononthing等方法自定义返回参数
+   - 在 Mockito 中，每创建一个模拟对象，如 Mockito.mock(List.class)，这个模拟对象会为所有方法提供默认实现。默认实现并不会执行原有方法逻辑而是直接根据原有方法预期返回值类型直接返回缺省参数，如果希望方法返回指定参数，则可以采用doreturn、dononthing等方法自定义返回参数
 
 3. 参数捕获器 Argument Captor：@Captor
 
-   1. Captor拦截能够结合Mockito.*verify获取匿名变量*
+   - Captor拦截能够结合Mockito.*verify获取匿名变量*
 
 4. Mockito.verify
 
-   1. Mockito的验证语法与Junit关注点不同，前者用于模拟对象，对模拟对象的行为进行验证，诸如调用次数、调用顺序；还有拓展用法去捕获验证参数，用以进行进一步的测试或者验证
+   - Mockito的验证语法与Junit关注点不同，前者用于模拟对象，对模拟对象的行为进行验证，诸如调用次数、调用顺序；还有拓展用法去捕获验证参数，用以进行进一步的测试或者验证
 
 5. 参数匹配器：anyXXX()系列,isA(),argThat()
 
-   1. 用以在行为拦截时，匹配预输入参数的大概类型，argThat为自定义匹配不在此赘述
+   - 用以在行为拦截时，匹配预输入参数的大概类型，argThat为自定义匹配不在此赘述
 
 6. Spy与Mock的区别
 
-   1. `spy`是对真实对象的包装。当使用`spy`时，它会基于真实对象的行为来工作，但可以监视和选择性地修改某些方法的调用。也就是说，它首先会执行真实对象本身的方法实现，除非特别指定了某些方法的行为。
+   - `spy`是对真实对象的包装。当使用`spy`时，它会基于真实对象的行为来工作，但可以监视和选择性地修改某些方法的调用。也就是说，它首先会执行真实对象本身的方法实现，除非特别指定了某些方法的行为。
 
 总例：
 
@@ -417,13 +417,13 @@ public void test0() {
 
 暂时无法解决项：
 
-1. 静态方法依赖
+-  静态方法依赖
 
 ### Robolectric
 
-**概念：**Robolectric 允许在 JVM 上模拟 Android 环境，包括对 Activity、Service 等组件的测试，因为它会提供一个虚拟的 Android 环境，模拟 Android 系统的各种行为，如 Context 的创建、资源的访问等使得可以在普通的 Java 虚拟机上运行 Android 单元测试
+**概念**：Robolectric 允许在 JVM 上模拟 Android 环境，包括对 Activity、Service 等组件的测试，因为它会提供一个虚拟的 Android 环境，模拟 Android 系统的各种行为，如 Context 的创建、资源的访问等使得可以在普通的 Java 虚拟机上运行 Android 单元测试
 
-**作用：**在包含安卓组件被测试类的测试类一开始增加@RunWith(RobolectricTestRunner.class)注解，用于模拟安卓环境
+**作用**：在包含安卓组件被测试类的测试类一开始增加@RunWith(RobolectricTestRunner.class)注解，用于模拟安卓环境
 
 其他：
 
