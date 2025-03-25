@@ -1,7 +1,7 @@
 baseurl: https://tdyjrs.com/
-languageCode: en-us
+languageCode: en - us
 theme: stack
-title: TDYJRS'blog
+title: "" # 由i18n处理
 copyright: TDYJRS
 
 # Theme i18n support
@@ -17,24 +17,12 @@ languages:
         languageName: 简体中文
         title: TDYJRS'blog
         weight: 1
-        params:
-            sidebar:
-                subtitle: 散步狗狗
-            
-    # en:
-    #     languageName: English
-    #     title: TDYJRS'blog
-    #     weight: 2
-    #     params:
-    #         sidebar:
-    #             subtitle: Show me your code
-    # jp:
-    #     languageName: 日本語
-    #     title: TDYJRS'blog
-    #     weight: 3
-    #     params:
-    #         sidebar:
-    #             subtitle: みんなだいすき
+
+    en:
+        languageName: English
+        title: TDYJRS'blog
+        weight: 2
+
 services:
     # Change it to your Disqus shortname before using
     disqus:
@@ -47,7 +35,7 @@ pagination:
     pagerSize: 4
 
 permalinks:
-    post: /p/:slug/
+    post: /zh-cn/:slug/
     page: /:slug/
 
 params:
@@ -59,7 +47,7 @@ params:
 
     footer:
         since: 2024
-        customText: Hello World!
+        customText: "" # 由i18n处理
 
     dateFormat:
         published: 2006-01-02
@@ -67,7 +55,7 @@ params:
 
     sidebar:
         emoji: 🍥
-        subtitle: 散步狗狗
+        subtitle: "" # 由i18n处理
         avatar:
             enabled: true
             local: true
@@ -79,7 +67,7 @@ params:
         readingTime: true
         license:
             enabled: true
-            default: Licensed under CC BY-NC-SA 4.0
+            default: "" # 由i18n处理
 
     comments:
         enabled: false
@@ -215,43 +203,32 @@ params:
 ### To remove about, archive and search page menu item, remove `menu` field from their FrontMatter
 menu:
     main: []
-
     social:
         - identifier: github
           name: GitHub
           url: https://github.com/TDYJRS
           params:
               icon: brand-github
-
         - identifier: twitter
           name: Twitter
           url: https://x.com/XYDZZY
           params:
               icon: brand-twitter
-        
         - identifier: memos
           name: Memos
           url: https://memos.tdyjrs.com
           params:
               icon: brand-message
-
         - identifier: youtube
           name: YouTube
           url: https://www.youtube.com/@tdyjrs
           params:
               icon: brand-youtube
-
         - identifier: RSS
           name: RSS
           url: https://tdyjrs.com/index.xml
           params:
               icon: rss
-
-        # - identifier: Telegram
-        #   name: Telegram
-        #   url: 
-        #   params:
-        #       icon: brand-telegram
 
 related:
     includeNewer: true
@@ -260,7 +237,6 @@ related:
     indices:
         - name: tags
           weight: 100
-
         - name: categories
           weight: 200
 

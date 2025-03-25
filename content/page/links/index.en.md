@@ -1,16 +1,16 @@
 ---
-title: "友链"
+title: "Links"
 links:
   - title: 莱特雷-letere
-    description: 本站搭建初期采纳的教学博客地址，感谢莱特雷-letere
+    description: The teaching blog address adopted in the early stage of this site construction, thanks to Letere-letere
     website: https://letere-gzj.github.io/hugo-stack/
     image: https://letere-gzj.github.io/hugo-stack/img/muzimi.gif
   - title: Exnadio's Blog
-    description: 本站早期修改博客样式采纳的教学博客地址，感谢Exnadio
+    description: The teaching blog address adopted by this site in the early modification of the blog style, thanks to Exnadio
     website: https://oxidane-uni.github.io/
     image: https://oxidane-uni.github.io/img/avatar1_hu98db67a741a59afacaa94de45dcf24e0_95532_300x0_resize_box_3.png
   - title: Docker — 从入门到实践
-    description: 作为野路子出身，笔者在相当长一段时间内使用均使用Docker部署现成镜像这种讨巧的方式部署应用，在此感谢这篇教程
+    description: As a self-taught person, I have been using Docker to deploy ready-made images for a long time. I would like to thank this tutorial for this.
     website: https://yeasy.gitbook.io/docker_practice
     image: https://hub.docker.com/api/media/repos_logo/v1/library%2Fdocker
 menu:
@@ -25,4 +25,4 @@ comments: false
 
 
 
-在此感谢诸位对本博客的帮助，排名不分先后
+If I have been able to see further, it was only because I stood on the shoulders of giants.

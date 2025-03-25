@@ -1,0 +1,14 @@
+[footer.customText]
+other = "Hello World!"
+
+[footer.totalVisits]
+other = "Total Visits:"
+
+[footer.totalVisitors]
+other = "Total Visitors:"
+
+[sidebar.subtitle]
+other = "1145141919810"
+
+[article.license]
+other = "Licensed under CC BY-NC-SA 4.0"
