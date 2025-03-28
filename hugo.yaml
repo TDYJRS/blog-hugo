@@ -43,7 +43,7 @@ params:
         - post
     featuredImageField: image
     rssFullContent: true
-    favicon: /Peach.ico
+    favicon: /mia32x32.png
 
     footer:
         since: 2024
@@ -54,7 +54,7 @@ params:
         lastUpdated: 2006-01-02 15:04 MST
 
     sidebar:
-        emoji: 🍥
+        emoji: 🍑
         subtitle: "" # 由i18n处理
         avatar:
             enabled: true
