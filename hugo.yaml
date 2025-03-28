@@ -226,7 +226,7 @@ menu:
               icon: brand-youtube
         - identifier: RSS
           name: RSS
-          url: https://tdyjrs.com/index.xml
+          url: https://blog.tdyjrs.com/index.xml
           params:
               icon: rss
 
