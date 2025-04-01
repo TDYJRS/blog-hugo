@@ -13,6 +13,9 @@ links:
     description: 作为野路子出身，笔者在相当长一段时间内使用均使用Docker部署现成镜像这种讨巧的方式部署应用，在此感谢这篇教程
     website: https://yeasy.gitbook.io/docker_practice
     image: https://hub.docker.com/api/media/repos_logo/v1/library%2Fdocker
+  - title: 苏洋博客
+    description: 感谢巨佬在docker架构上给出的博客与见解，大幅度减少笔者从0搭建自用服务架构的时间
+    website: https://soulteary.com
 menu:
     main: 
         weight: -50

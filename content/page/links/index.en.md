@@ -13,6 +13,9 @@ links:
     description: As a self-taught person, I have been using Docker to deploy ready-made images for a long time. I would like to thank this tutorial for this.
     website: https://yeasy.gitbook.io/docker_practice
     image: https://hub.docker.com/api/media/repos_logo/v1/library%2Fdocker
+  - title: soulteary
+    description: Thanks to the blog and insights given by the giant on the docker architecture, which greatly reduced the time for me to build my own service architecture from scratch.
+    website: https://soulteary.com
 menu:
     main: 
         weight: -50
